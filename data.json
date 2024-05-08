@@ -10,7 +10,8 @@
       "history": "Asimo was the first humanoid robot capable of walking on two legs without a support frame.",
       "price": "$150,000",
       "imgFront": "images/asimoFace.jpg",
-      "imgBack": "images/asimoFull.jpg"
+      "imgBack": "images/asimoFull.jpg",
+      "color": "black"
   },
   {
       "id": 2,
@@ -23,7 +24,8 @@
       "history": "Spot is known for its ability to navigate complex terrains and perform tasks in challenging environments.",
       "price": "$75,000",
       "imgFront": "images/spotFace.jpg",
-      "imgBack": "images/spotFull.jpg"
+      "imgBack": "images/spotFull.jpg",
+      "color": "black"
   },
   {
       "id": 3,
@@ -36,7 +38,8 @@
       "history": "Ameca is highlighted for its advanced capabilities in human-like movements and interactions, making it a significant development in the field of humanoid robotics.",
       "price": "NA",
       "imgFront": "images/amecaFace.jpg",
-      "imgBack": "images/amecaFull.jpg"
+      "imgBack": "images/amecaFull.jpg",
+      "color": "black"
   },
   {
       "id": 4,
@@ -49,7 +52,8 @@
       "history": "Atlas is renowned for its ability to perform complex tasks such as opening doors and picking up objects.",
       "price": "$2,000,000",
       "imgFront": "images/atlasFace.jpg",
-      "imgBack": "images/atlasFull.jpg"
+      "imgBack": "images/atlasFull.jpg",
+      "color": "white"
   },
   {
       "id": 5,
@@ -62,7 +66,8 @@
       "history": "Pepper was the first robot to be sold to consumers, designed to engage in conversations and entertain users.",
       "price": "$1,600",
       "imgFront": "images/pepperFace.jpg",
-      "imgBack": "images/pepperFull.jpg"
+      "imgBack": "images/pepperFull.jpg",
+      "color": "white"
   },
   {
       "id": 6,
@@ -75,7 +80,8 @@
       "history": "Beyond Imagination CEO and co-founder Harry Kloor expressed hope that Beomni will revolutionize elder care and take on more challenging tasks in various industries.",
       "price": "NA",
       "imgFront": "images/beomiFace.jpg",
-      "imgBack": "images/beomiFull.jpg"
+      "imgBack": "images/beomiFull.jpg",
+      "color": "white"
   },
   {
       "id": 7,
@@ -88,7 +94,8 @@
       "history": "Digit is known for its enhanced features, including newly designed end effectors and improved human-robot interaction capabilities.",
       "price": "$40,000",
       "imgFront": "images/digitFace.jpg",
-      "imgBack": "images/digitFull.jpg"
+      "imgBack": "images/digitFull.jpg",
+      "color": "white"
   },
   {
       "id": 8,
@@ -101,7 +108,8 @@
       "history": "Phoenix represents a significant step forward in the development of humanoid robots with near-term commercial aspirations.",
       "price": "$50,000",
       "imgFront": "images/phoenixFace.jpg",
-      "imgBack": "images/phoenixFull.jpg"
+      "imgBack": "images/phoenixFull.jpg",
+      "color": "black"
   },
   {
       "id": 9,
@@ -114,7 +122,8 @@
       "history": "GR-01 is part of the growing trend of humanoid robots entering the labor force, with a focus on commercial applications.",
       "price": "$45,000",
       "imgFront": "images/gr1Face.jpg",
-      "imgBack": "images/gr1Full.jpg"
+      "imgBack": "images/gr1Full.jpg",
+      "color": "black"
   },
   {
       "id": 10,
@@ -127,7 +136,8 @@
       "history": "Apollo is part of the competitive race among humanoid robots, aiming to bring advanced robotics to the consumer market.",
       "price": "$35,000",
       "imgFront": "images/apolloFace.jpg",
-      "imgBack": "images/apolloFull.jpg"
+      "imgBack": "images/apolloFull.jpg",
+      "color": "white"
   },
   {
       "id": 11,
@@ -140,7 +150,8 @@
       "history": "Figure 01 represents a significant investment in the development of humanoid robots, with a focus on commercial viability.",
       "price": "$30,000",
       "imgFront": "images/figure1Face.jpg",
-      "imgBack": "images/figure1Full.jpg"
+      "imgBack": "images/figure1Full.jpg",
+      "color": "white"
   },
   {
       "id": 12,
@@ -153,6 +164,7 @@
       "history": "Optimus Generation 2 is Tesla's entry into the humanoid robot market, initially developed for use in Tesla automotive factories.",
       "price": "Estimated $20,000",
       "imgFront": "images/optimus2Face.jpg",
-      "imgBack": "images/optimus2Full.jpg"
+      "imgBack": "images/optimus2Full.jpg",
+      "color": "black"
   }
 ]
