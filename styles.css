@@ -17,30 +17,42 @@
     font-weight: 600;
     src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProDisplay-SemiBold.ttf");
 }
+
+@font-face {
+    font-family: "Silka";
+    src: url('fonts/silka-regular-webfont.eot');
+	src: url('fonts/silka-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/silka-regular-webfont.woff') format('woff'),
+	     url('fonts/silka-regular-webfont.ttf') format('truetype'),
+	     url('fonts/silka-regular-webfont.woff2') format('woff2')
+}
+
   
-  
-body {
+main {
     display: flex;
     height: auto;
     min-height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    /* background-color: red; */
 }
 
 /* cards use 4:5 ratio */
-#container {
+#products {
     display: grid;
     position: relative;
+    width: fit-content;
     grid-template-columns: repeat(1, 22.5rem);
-    column-gap: 2rem;
-    row-gap: 1rem;
+    column-gap: 4rem;
+    row-gap: 2rem;
     padding: 20px 0;
+    /* background-color: green; */
 
     @media only screen and (min-width: 481px) {
-        grid-template-rows: repeat(2, 28.125rem);
-        grid-template-columns: repeat(4, 22.5rem);
+        grid-template-rows: repeat(4, 28.125rem);
+        grid-template-columns: repeat(3, 22.5rem);
         padding: 0;
+        row-gap: 4rem;
     }
 
 }
@@ -53,7 +65,7 @@ body {
     position: relative;
 }
 
-img {
+.card_img {
     width: 22.5rem;
     height: 28.125rem;
     border-radius: 18px;
@@ -63,7 +75,6 @@ img {
 section {
     position: absolute;
     top: 0;
-    width: 22.5rem;
     color: white;
     padding: 20px;
 }
