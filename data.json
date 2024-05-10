@@ -36,7 +36,7 @@
       "year": 2023,
       "country": "United Kingdom",
       "history": "Ameca is highlighted for its advanced capabilities in human-like movements and interactions, making it a significant development in the field of humanoid robotics.",
-      "price": "NA",
+      "price": "Out of stock",
       "imgFront": "images/amecaFace.jpg",
       "imgBack": "images/amecaFull.jpg",
       "color": "black"
@@ -78,14 +78,14 @@
       "year": 2022,
       "country": "United States",
       "history": "Beyond Imagination CEO and co-founder Harry Kloor expressed hope that Beomni will revolutionize elder care and take on more challenging tasks in various industries.",
-      "price": "NA",
+      "price": "Out of stock",
       "imgFront": "images/beomiFace.jpg",
       "imgBack": "images/beomiFull.jpg",
       "color": "white"
   },
   {
       "id": 7,
-      "name": "Next-generation Digit",
+      "name": "Digit",
       "type": "Humanoid",
       "description": "A next-generation humanoid robot by Agility Robotics, optimized for various applications including e-commerce and shipping warehouses.",
       "company": "Agility Robotics",
@@ -162,7 +162,7 @@
       "year": 2023,
       "country": "United States",
       "history": "Optimus Generation 2 is Tesla's entry into the humanoid robot market, initially developed for use in Tesla automotive factories.",
-      "price": "Estimated $20,000",
+      "price": "$20,000",
       "imgFront": "images/optimus2Face.jpg",
       "imgBack": "images/optimus2Full.jpg",
       "color": "black"
