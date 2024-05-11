@@ -27,99 +27,83 @@
 	     url('fonts/silka-regular-webfont.woff2') format('woff2')
 }
 
-  
-main {
-    display: flex;
-    height: auto;
-    min-height: 100vh;
-    justify-content: center;
-    align-items: center;
-    /* background-color: red; */
+@font-face {
+    font-family: "TTFirs";
+    src: url('fonts/TT\ Firs\ Neue\ Normal.ttf') format('truetype')
 }
 
-/* cards use 4:5 ratio */
-#products {
-    display: grid;
-    position: relative;
-    width: fit-content;
-    grid-template-columns: repeat(1, 22.5rem);
-    column-gap: 4rem;
-    row-gap: 2rem;
-    padding: 20px 0;
-    /* background-color: green; */
+  
+.navbar {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    display: flex;
+    font-size: 2.5rem;
+    font-family: Silka;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
 
     @media only screen and (min-width: 481px) {
-        grid-template-rows: repeat(4, 28.125rem);
-        grid-template-columns: repeat(3, 22.5rem);
-        padding: 0;
-        row-gap: 4rem;
+        font-size: 1.4rem;
     }
-
 }
 
-.card {
-    width: 22.5rem;
-    height: 28.125rem;
-    box-shadow: 4px 4px 12px #00000014;
-    border-radius: 18px;
-    position: relative;
-}
-
-.card_img {
-    width: 22.5rem;
-    height: 28.125rem;
-    border-radius: 18px;
-    box-shadow: 4px 4px 12px #00000014;
-}
-
-section {
+.navbar_links {
+    display: none;
     position: absolute;
-    top: 0;
-    color: white;
-    padding: 20px;
-}
-
-.title {
-    font-size: .75rem;
-    font-family: SF Pro Text, Helvetica Neue, Helvetica, Arial, sans-serif;
-    padding-bottom: 8px;
-}
-
-.title-white {
-    color: #f5f5f7;
-}
-
-.description {
-    text-decoration: none;
-    font-size: 1.75rem;
-    font-family: SF Pro Display, Helvetica Neue, Helvetica, Arial, sans-serif;
-    line-height: 1.1429;
-}
-
-.white {
+    top: 6rem;
+    width: 100%;
+    height: 100vh;
+    list-style-type: none;
     color: #ffffff;
+    background-color: #113259;
+    z-index: 1;
+    padding-top: 5rem;
+
+    @media only screen and (min-width: 481px) {
+        display: flex;
+        position: relative;
+        top: 0;
+        width: auto;
+        height: auto;
+        background-color: #f3f3f2;
+        padding-top: 0;
+    }
 }
 
-.black {
-    color: #1D1D1F;
+.navbar_links > li {
+    padding: 3rem 0;
+    @media only screen and (min-width: 481px) {
+        padding: 0;
+    }
 }
 
-.title-black {
-    color: #6e6e73;
+#logo {
+    color: #ffffff;
+    width: 13rem;
+
+    @media only screen and (min-width: 481px) {
+        padding-left: 2rem;
+    }
 }
 
-.price {
-    font-size: 1.0625rem;
-    font-family:  SF Pro Text, Helvetica Neue, Helvetica, Arial, sans-serif;
-    line-height: 1.2353;
-    padding-top: 10px;
+
+.navbar_links > li > a {
+    color: black;
 }
 
-.card_hover > div {
-    transition: transform 1s;
+.navbar_links_link {
+    text-decoration: none;
+    padding: 1rem;
 }
 
-.card_hover > div:hover {
-    transition: transform 1s;
-    transform: scale(1.05);
+#navbar--hamburger {
+    display: block;
+    font-size: 1.5rem;
+    padding-right: 1rem;
+
+    @media only screen and (min-width: 481px) {
+        display: none;
+    }
 }
