@@ -1,4 +1,28 @@
-const products = document.querySelector('#products');
+//targeting html elements
+let sortedData;
+
+
+//Add an event listener to hamburger menu that upon click toggles the navbar_links display, and also the overflow behavior
+//Also does extra styling for a better mobile experience
+
+let menu = document.querySelector("#navbar--hamburger");
+menu.addEventListener("click", () => {
+
+    let links = document.querySelector(".navbar_links");
+
+
+     if ( links.style.display === "flex") {
+         links.style.display = "none";
+         document.body.style.overflow = "auto";
+     } else {
+         links.style.display = "flex";
+         links.style.flexDirection = "column";
+         links.style.alignItems = "center";
+         document.body.style.overflow = "hidden";
+     }
+
+});
+
 
 async function fetchData() {
     try {
@@ -9,14 +33,14 @@ async function fetchData() {
         const data = await response.json()
 
         sortData(data);
-        displayData(data);
+        displayData(sortedData);
     } catch (error) {
         console.error('Error:', error);
     }
 };
 
 const sortData = (data) => {
-    return data.sort((a, b) => {
+    data.sort((a, b) => {
         if (a.color == 'white') {
             return 1;
         }
@@ -24,9 +48,20 @@ const sortData = (data) => {
             return -1;
         }
     });
+
+    let arr = [];
+    let a = data.length - 1; 
+    let b = a/2;
+    for(let i = 0; i < b; i++) arr.push( data[i], data[a - i]);
+
+    sortedData = arr;
 };
 
 const displayData = (data) => {
+
+    const products = document.querySelector('#products');
+
+
     data.forEach((obj) => {
         const anchor = document.createElement('a');
         const card = document.createElement('div');
@@ -54,8 +89,6 @@ const displayData = (data) => {
         header.textContent = obj.company;
         para1.textContent = obj.name;
         para2.textContent = obj.price;
-
-        console.log(para2);
 
         products.appendChild(anchor);
         anchor.appendChild(card)
