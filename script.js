@@ -74,6 +74,7 @@ const displayData = (data) => {
         card.className = "card"
         anchor.className = "card_hover";
         img.className = "card_img"
+        section.className = "card-section"
          
         if (obj.color == 'white') {
             header.className = "title title-black";
@@ -90,7 +91,11 @@ const displayData = (data) => {
         para1.textContent = obj.name;
         para2.textContent = obj.price;
 
-        products.appendChild(anchor);
+        //Checks if products container exist so the other pages dont run into errors since products variable is
+        //only found in products page
+        if (products) {
+            products.appendChild(anchor);
+        }
         anchor.appendChild(card)
         card.appendChild(img);
         card.appendChild(section);
@@ -103,7 +108,17 @@ const displayData = (data) => {
 
 fetchData();
 
+// const displayHomeCards = ((data) => {
+
+//     const container = document.querySelector('.home-cards')
+
+//     const anchor = document.createElement('a');
+//     const card = document.createElement('div');
+//     const img = document.createElement('img');
+//     const header = document.createElement('h3');
+//     const section = document.createElement('section');
+//     const para1 = document.createElement('p');
+//     const para2 = document.createElement('p');
 
 
-
-
+// })
