@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/55d0436e24.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <script defer src="script.js"></script>
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="images/SparkCraftLogo.svg" alt="" id="logo">
+            <ul class="navbar_links">
+                <li><a class="navbar_links_link" href="index.html">Home</a></li>
+                <li><a class="navbar_links_link" href="products.html">Technology</a></li>
+                <li><a class="navbar_links_link" href="contact.html">Contact</a></li>
+            </ul>
+            <i class="fa-solid fa-bars" id="navbar--hamburger"></i>
+        </nav>
+    </header> 
+    <main>
+        <section class="section-main">
+            <img src="images/robotBye.webp" alt="Boston Dynamics atlas" id="atlas_farewell">
+            <div class="donate_div">
+                <form>
+                    <section class="section_square-2">
+                        <div class="full-name">
+                            <label for="first-name" id="full-name-label">Full Name: </label>
+                            <input type="text" id="first-name" name="first-name" placeholder="First Name" required value="">
+                            <input type="text" id="last-name" name="last-name" placeholder="Last Name" required  value="">
+                        </div>
+                        <div>
+                            <label for="email" class="contact_label">Email:</label>
+                            <input type="email" id="email" name="email" class="section_square2-inputs" placeholder="myname@example.com" required  value="">
+                        </div>
+                        <div>
+                            <label for="phone" class="contact_label">Phone:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(000) 000-0000" class="section_square2-inputs num_field" required  value="">
+                        </div>
+                        <div>
+                            <label for="message" class="contact_label">Message:</label>
+                            <input type="text" id="message" name="phone" placeholder="Message Here" class="section_square2-inputs" required  value="">
+                        </div>
+                        <hr>
+                        <button type="submit" id="second_next" class="button-next">Submit</button>
+                    </section>
+                </form>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <section class="footer-contact">
+            <h2>Let's talk</h2>
+            <h3>hi@sparkcraft.net</h3>
+            <p>Contact us</p>
+        </section>
+        <section class="footer-content">
+            <ul>
+                <li class="footer-content-header">What we do</li>
+                <li>Technology</li>
+                <li>Design</li>
+                <li>Infrastructure</li>
+                <li>Games</li>
+            </ul>
+            <ul>
+                <li class="footer-content-header">Social</li>
+                <li>Discord</li>
+                <li>Twitter</li>
+                <li>Youtube</li>
+                <li>Github</li>
+            </ul>
+            <ul>
+                <li class="footer-content-header">Company</li>
+                <li>About</li>
+                <li>Career</li>
+                <li>Robots</li>
+                <li>Status</li>
+            </ul>
+        </section>
+        <section class="footer-legal">
+            <p>© 2024 SparkCraft Inc.</p>
+            <ul class="footer-legal-container">
+                <li>Privacy</li>
+                <li>Imprint</li>
+                <li>Terms of Service</li>
+                <li>Language</li>
+                <li><img src="images/android.png" id="droid-img"></li>
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>
