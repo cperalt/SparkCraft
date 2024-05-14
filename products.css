@@ -23,14 +23,28 @@
     column-gap: 4rem;
     row-gap: 2rem;
     padding: 20px 0;
-    /* background-color: green; */
 
-    @media only screen and (min-width: 481px) {
+    @media only screen and (min-width: 481px){
+        grid-template-rows: repeat(6, 28.125rem);
+        grid-template-columns: repeat(2, 22.5rem);
+        padding: 0;
+        column-gap: 1.5rem;
+        row-gap: 2rem;
+    }
+
+    @media only screen and (min-width: 820px) {
+
+        column-gap: 5rem;
+        row-gap: 4rem;
+    }
+
+    @media only screen and (min-width: 1250px){
         grid-template-rows: repeat(4, 28.125rem);
         grid-template-columns: repeat(3, 22.5rem);
         padding: 0;
         row-gap: 4rem;
     }
+
 
 }
 
