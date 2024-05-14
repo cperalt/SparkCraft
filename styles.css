@@ -2,7 +2,16 @@
     box-sizing: inherit;
     padding: 0;
     margin: 0;
+    /* filter: invert(1); */
 }
+
+/* body {
+    background-color: white;
+}
+
+img {
+    filter: invert(0);
+} */
 
 @font-face {
     font-family: "SF Pro Text";
@@ -169,19 +178,29 @@
     font-family: TTfirs;
     font-weight: unset;
 
-    @media only screen and (min-width: 481px) {
+    @media only screen and (min-width: 481px) and (max-width: 1024px)  {
+        /* row-gap: 2rem; */
+    }
+
+    @media only screen and (min-width: 1025px){
         font-size: 1.9rem;
         margin-top: -8rem;
     }
+
 }
 
 .footer-contact > p {
     font-family: Silka;
 
-    @media only screen and (min-width: 481px) {
+    @media only screen and (min-width: 481px) and (max-width: 1024px)  {
+        /* row-gap: 2rem; */
+    }
+
+    @media only screen and (min-width: 1025px){
         font-size: 1.063rem;
         margin-top: -9rem;
     }
+
 }
 
 .footer-content {
@@ -258,4 +277,8 @@
     @media (max-width: 900px) {
         flex-direction: column;
     }
+}
+#droid-img {
+    width: 25px;
+    height: 25px;
 }
