@@ -29,6 +29,8 @@ html {
     /* height: 450px; */
     border-radius: 5%;
 
+    filter: invert(0);
+
     @media (max-width: 1024px) {
         width: 100%;
     }
@@ -45,10 +47,10 @@ hr {
     margin-top: 1.5rem;
     height: 3.5rem;
     border-radius: 9999px;
-    background: #de582a;
     font-family: Silka, Montserrat;
     color: #ffffff;
     font-weight: 900;
+    color: black;
 }
 
 
@@ -80,13 +82,13 @@ hr {
     font-size: 20px;
     margin-right: 1rem;
     font-weight: 600;
-    color: #113529;
+    color: black;
     font-family: TTfirs, Montserrat;
 }
 
 .contact_label {
     font-weight: 600;
-    color: #113529;
+    color: black;
     font-family: TTfirs, Montserrat;
 }
 
