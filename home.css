@@ -39,6 +39,7 @@ video {
 .header-brand {
     position: absolute;
     width: 20rem;
+    color: black;
 
     @media only screen and (min-width: 481px) {
        width: 45rem; 
@@ -70,7 +71,7 @@ video {
     border-radius: 1.5rem;
     padding-bottom: 2rem;
 
-    @media only screen and (min-width: 481px) {
+    @media only screen and (min-width: 1025px) {
         display: flex;
         flex-direction: column;
         width: 99rem;
@@ -79,6 +80,7 @@ video {
         border-radius: 2rem;
         
     }
+
 }
 
 .first-section-para {
@@ -106,7 +108,6 @@ video {
         font-size: 2rem;
         
     }
-
 }
 
 .home-cards {
@@ -117,13 +118,17 @@ video {
     margin-top: 3rem;
 
 
-    @media only screen and (min-width: 481px) {
+    @media only screen and (min-width: 1025px) {
         display: flex;
         justify-content: center;
         flex-direction: row;
         margin-top: 9rem;
         
     }
+
+    /* @media (min-width: 1026px) {
+        flex-direction: column;
+    } */
 }
 
 .card {
