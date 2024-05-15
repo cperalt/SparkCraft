@@ -34,9 +34,8 @@ const sortData = (data) => {
     return arr;
 };
 
-const displayData = (data) => {
+const displayData = (data, container) => {
 
-    const products = document.querySelector('#products');
 
 
     data.forEach((obj) => {
@@ -70,8 +69,8 @@ const displayData = (data) => {
 
         //Checks if products container exist so the other pages dont run into errors since products variable is
         //only found in products page
-        if (products) {
-            products.appendChild(anchor);
+        if (container) {
+            container.appendChild(anchor);
         }
         anchor.appendChild(card)
         card.appendChild(img);
@@ -101,21 +100,70 @@ const displayData = (data) => {
     })
 }
 
-// const mouseOver = () => {
-//     const anchor = document.querySelectorAll(".card_hover");
-//     const title = document.querySelectorAll(".title");
-//     const para = document.querySelectorAll(".decription");
-//     const para2 = document.querySelectorAll(".price");
+const priceAscending = (data) => {
 
-//     title.
-// }
+
+    data.forEach((obj) => {
+        const price = Number(obj.price.split("").slice(1).join("").replace(/,/g, ""));
+        obj.price = price;
+    })
+
+    const newData = data.toSorted((a, b) => {
+        return a.price - b.price;
+    });
+
+    return newData;
+};
+
+const priceDescending = (data) => {
+
+
+    const newData2 = data.toSorted((a, b) => {
+        return b.price - a.price;
+    });
+
+    return newData2;
+};
 
 
 const main = async () => {
     const data = await fetchData();
 
     const sortedData = sortData(data);
-    displayData(sortedData);
+    const priceUp = priceAscending(data);
+    const priceDown = priceDescending(sortedData);
+
+    const page = document.querySelector("#main-product-page");
+    const page2 = document.querySelector("#main-product-page2");
+    const page3 = document.querySelector("#main-product-page3");
+    const ascendingBtn = document.querySelector(".sort-ascending");
+    const descendBtn = document.querySelector(".sort-descending");
+    const sortReset = document.querySelector(".sort-reset");
+    const products = document.querySelector('#products');
+    const products2 = document.querySelector('#products2');
+    const products3 = document.querySelector('#products3');
+
+    displayData(sortedData, products);
+    displayData(priceUp, products2);
+    displayData(priceDown, products3);
+
+    ascendingBtn.addEventListener("click", () => {
+        page2.style.display = "flex"
+        page.style.display = "none";
+        page3.style.display = "none";
+    })
+
+    descendBtn.addEventListener("click", () => {
+        page3.style.display = "flex"
+        page2.style.display = "none";
+        page.style.display = "none";
+    })
+
+    sortReset.addEventListener("click", () => {
+        page3.style.display = "none"
+        page2.style.display = "none";
+        page.style.display = "flex";
+    })
 }
 
 main();
@@ -144,21 +192,6 @@ menu.addEventListener("click", () => {
 
 
 
-// const displayHomeCards = ((data) => {
-
-//     const container = document.querySelector('.home-cards')
-
-//     const anchor = document.createElement('a');
-//     const card = document.createElement('div');
-//     const img = document.createElement('img');
-//     const header = document.createElement('h3');
-//     const section = document.createElement('section');
-//     const para1 = document.createElement('p');
-//     const para2 = document.createElement('p');
-
-
-// })
-
 const paymentNumbers = document.querySelectorAll(".num_field");
 
 paymentNumbers.forEach((btn) => {
@@ -180,4 +213,3 @@ paymentNumbers.forEach((btn) => {
 
 const cardNumber = document.querySelector("#cardnumber");
 
-console.log(cardNumber);
