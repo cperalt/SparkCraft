@@ -5,13 +5,14 @@
     /* filter: invert(1); */
 }
 
-/* body {
-    background-color: white;
+/* .card, .home-card-section, .card-section, #header-text, #droid-img {
+    filter: invert(0);
 }
 
-img {
-    filter: invert(0);
+body {
+    background-color: white;
 } */
+
 
 @font-face {
     font-family: "SF Pro Text";
@@ -57,6 +58,18 @@ img {
     }
 }
 
+#navbar_imgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#darkmode {
+    width: 30px;
+    height: 30px;
+    margin-left: 1rem;
+}
+
 .navbar_links {
     display: none;
     position: absolute;
@@ -65,8 +78,8 @@ img {
     height: 100vh;
     list-style-type: none;
     color: #ffffff;
-    background-color: #121626;
-    z-index: 1;
+    background-color: black;
+    z-index: 2;
     padding-top: 5rem;
 
     @media only screen and (min-width: 481px) {
@@ -94,7 +107,6 @@ img {
     width: 13rem;
 
     @media only screen and (min-width: 481px) {
-        padding-left: 2rem;
     }
 }
 
@@ -134,10 +146,8 @@ img {
     padding: 3.2rem;
     margin-top: 3.2rem;
     justify-content: space-between;
+    color: black;
 
-    /* @media only screen and (min-width: 481px) {
-        width: 100%;
-    } */
 
     @media (max-width: 900px) {
         grid-template-areas: "a" "b" "c";
@@ -212,6 +222,7 @@ img {
     line-height: 1.4;
     font-family: Silka;
     font-size: .75rem;
+    color: black;
 
     @media (min-width: 901px) {
         grid-auto-flow: column;
@@ -230,6 +241,7 @@ img {
 
 .footer-content > ul {
     line-height: 1.8;
+    color: black;
 
     @media (max-width: 900px) {
         margin-bottom: 1rem;
@@ -242,6 +254,7 @@ img {
 
 .footer li {
     list-style: none;
+    color: black;
 }
 
 .footer-legal {
@@ -253,6 +266,7 @@ img {
     order: 3;
     font-family: Silka;
     font-size: .75rem;
+    color: black;
 
     @media (min-width: 901px) {
         font-size: .95rem;
@@ -268,6 +282,7 @@ img {
     display: flex;
     flex-direction: row;
     gap: 1.2rem;
+    color: black;
 
     @media (max-width: 600px) {
         flex-wrap: wrap;
@@ -281,4 +296,13 @@ img {
 #droid-img {
     width: 25px;
     height: 25px;
+}
+
+a, li {
+    text-decoration: none;
+    color: black;
+}
+
+ul > li {
+    color: black;
 }
